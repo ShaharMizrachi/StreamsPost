@@ -34,14 +34,15 @@ class StreamForm extends React.Component{
 
    // ask niv 
     onSubmit=(formValues)=>{
+        console.log(formValues)
         this.props.onSubmit(formValues)
     }
 
 
      
-    //qustion how does it connect the button to the form itself in that way when i'm pushing submit ?****
+  
      render() {
-        console.log(this.props);
+        //console.log(this.props);
         return (
             <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
                 <Field name="title" component={this.renderInput} label="Enter Title"/>
