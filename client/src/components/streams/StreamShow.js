@@ -29,7 +29,7 @@ class StreamShow extends React.Component{
     }
 
     buildPlayer(){
-        if(this.player || !this.props.stream ){ // if we dont build a player oor do not have a stream
+        if(this.player || !this.props.stream ){ // if we dont build a player or do not have a stream
             return ;
         }
         const id =this.props.match.params.id

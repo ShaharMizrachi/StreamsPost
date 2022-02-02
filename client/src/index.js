@@ -26,4 +26,3 @@ ReactDOM.render(
     document.querySelector('#root')
 );
 //npm install redux-form --legacy-peer-deps
-//yarn add redux-form

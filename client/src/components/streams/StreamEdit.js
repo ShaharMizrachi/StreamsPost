@@ -36,7 +36,7 @@ class StreamEdit extends React.Component{
 }
 
 
-const mapStateToProps= (state, ownProps) =>{ //oenProps that is a referace for the props inside our StreamEdit component
+const mapStateToProps= (state, ownProps) =>{ //ownProps that is a referace for the props inside our StreamEdit component
     
     return {stream:state.streams[ownProps.match.params.id]};
 };

@@ -15,7 +15,7 @@ class StreamCreate extends React.Component{
 
 
      
-    //qustion how does it connect the button to the form itself in that way when i'm pushing submit ?****
+ 
      render() {
         return (
             <div>

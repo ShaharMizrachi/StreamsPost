@@ -5,8 +5,7 @@ import {signIn,signOut} from '../actions';
 
 class GoogleAuth extends React.Component {
   
-    //const auth=window.gapi.auth2.getAuthInstance(); whyyyyyy?
-  // ask about this.auth Niv gay
+    //const auth=window.gapi.auth2.getAuthInstance()
   componentDidMount() {
       window.gapi.load('client:auth2', () => { // the list of librarues sepereted by colon (:)
       window.gapi.client 
@@ -16,7 +15,7 @@ class GoogleAuth extends React.Component {
           scope: 'email'
         })
         .then(() => {
-            //we didnt declere her eabout auth from where is it?
+           
           this.auth = window.gapi.auth2.getAuthInstance();
           this.onAuthChange(this.auth.isSignedIn.get()); //update our auth state in redux store
           this.auth.isSignedIn.listen(this.onAuthChange);
